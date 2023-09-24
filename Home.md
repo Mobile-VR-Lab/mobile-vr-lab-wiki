@@ -1,2 +1,0 @@
-Useful Links:
-- [VisLab Mobile VR Lab Project Presentation](https://universitysystemnh-my.sharepoint.com/:p:/r/personal/tje475_usnh_edu/_layouts/15/guestaccess.aspx?e=yMwtox&share=ERSw58WBrQBFssL3MnhF1jsB1FZpP_droCDt7M08G5EtVw)
