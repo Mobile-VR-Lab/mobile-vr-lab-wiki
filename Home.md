@@ -3,3 +3,6 @@ Mobile VR Lab Resources:
 
 Instructor Links:
 - [Lectures](https://docs.google.com/spreadsheets/d/17QhYD7owmnFV37wXXCzubeYC1i4VtrNEuNqlL1iEL5g/edit#gid=861559772)
+
+Live Docs:
+- [Charter](https://docs.google.com/document/d/1AzrEQQna0sqeH6jmq9XWACUrQPHNJFHjwyGRSKqrE0M/edit#heading=h.c5rpsdy8g2ak)
