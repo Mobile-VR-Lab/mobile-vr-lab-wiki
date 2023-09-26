@@ -1,10 +1,14 @@
 Mobile VR Lab Resources:
-- [VisLab Mobile VR Lab Project Presentation](https://universitysystemnh-my.sharepoint.com/:p:/r/personal/tje475_usnh_edu/_layouts/15/guestaccess.aspx?e=yMwtox&share=ERSw58WBrQBFssL3MnhF1jsB1FZpP_droCDt7M08G5EtVw)
+
+- [VisLab Mobile VR Lab Project Presentation](https://universitysystemnh-my.sharepoint.com/:p:/r/personal/tje475_usnh_edu/\_layouts/15/guestaccess.aspx?e=yMwtox&share=ERSw58WBrQBFssL3MnhF1jsB1FZpP_droCDt7M08G5EtVw)
 
 Instructor Links:
+
 - [Lectures](https://docs.google.com/spreadsheets/d/17QhYD7owmnFV37wXXCzubeYC1i4VtrNEuNqlL1iEL5g/edit#gid=861559772)
 
 Live Docs:
+
 - [Meeting Minutes](https://docs.google.com/document/d/1cz0_cBLpXgDCDwTyGf_t4798rfZMIIOMGeRH0HH_DkE/edit)
 - [Charter](https://docs.google.com/document/d/1AzrEQQna0sqeH6jmq9XWACUrQPHNJFHjwyGRSKqrE0M/edit#heading=h.c5rpsdy8g2ak)
 - [User Stories](https://docs.google.com/document/d/14HdqApa8lbh3IsBc_AyPRG9tptEWp7aRVvDml7Rivys/edit)
+- [Release Planning](https://docs.google.com/document/d/1BuxlUJMqYur5WtViY73UXNJlz_DASU9bqrzAG7R0oU4/edit)
