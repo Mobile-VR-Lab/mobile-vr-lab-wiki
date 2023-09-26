@@ -7,3 +7,4 @@ Instructor Links:
 Live Docs:
 - [Meeting Minutes](https://docs.google.com/document/d/1cz0_cBLpXgDCDwTyGf_t4798rfZMIIOMGeRH0HH_DkE/edit)
 - [Charter](https://docs.google.com/document/d/1AzrEQQna0sqeH6jmq9XWACUrQPHNJFHjwyGRSKqrE0M/edit#heading=h.c5rpsdy8g2ak)
+- [User Stories](https://docs.google.com/document/d/14HdqApa8lbh3IsBc_AyPRG9tptEWp7aRVvDml7Rivys/edit)
