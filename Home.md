@@ -17,7 +17,7 @@ Live Docs:
 
 ---
 
-**GitLab Work Breakdown Structure:**
+**GitLab Work Breakdown Structure: (see the **[**wiki page for user stories**](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/user-stories#word-breakdown-structure)**)**
 
 - _Main Initiatives:_
 
@@ -27,23 +27,23 @@ Live Docs:
 - _Epics Under each main initiative:_
 
   There are four primary Epics which act as the overarching categories for our tasks:
-  1. Planning: This Epic involves tasks related to project planning and initial strategy development. 
-  2. Preparation: Tasks under this Epic deal with the groundwork and prerequisites necessary for the main development phase. 
-  3. MVP (Minimum Viable Product): This Epic encompasses tasks aimed at developing a functional prototype of the application. 
-  4. Documentation: All tasks related to documenting the development process, user guides, and technical manuals fall under this Epic. 
+  1. Planning: This Epic involves tasks related to project planning and initial strategy development.
+  2. Preparation: Tasks under this Epic deal with the groundwork and prerequisites necessary for the main development phase.
+  3. MVP (Minimum Viable Product): This Epic encompasses tasks aimed at developing a functional prototype of the application.
+  4. Documentation: All tasks related to documenting the development process, user guides, and technical manuals fall under this Epic.
 - Sub-Epics and User Stories:
 
   Each Epic contains Sub-Epics, which correspond to specific User Stories. These User Stories are integral components of our project, each representing a functionality or feature we aim to develop. The User Stories are as follows (listed in no particular order):
-   1. Hand Gesture Navigation 
-   2. Virtual Boundaries 
-   3. Real-Time Scene Viewing 
-   4. Script Loading 
-   5. Interactive Script 
-   6. Transparency Mode Scene 
-   7. Navigation Control 
-   8. Attention Mode 
-   9. Headset Connectivity Status 
-  10. OpenAPI Schema 
+   1. Hand Gesture Navigation
+   2. Virtual Boundaries
+   3. Real-Time Scene Viewing
+   4. Script Loading
+   5. Interactive Script
+   6. Transparency Mode Scene
+   7. Navigation Control
+   8. Attention Mode
+   9. Headset Connectivity Status
+  10. OpenAPI Schema
 - Issues Issues in GitLab:
 
   Issues are categorized under their respective projects and are linked to the corresponding Sub-Epic and any other elated issues. Each one represents a specific task or responsibility associated with developing the features outlined in the User Stories.
