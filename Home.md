@@ -17,7 +17,7 @@ Live Docs:
 
 ---
 
-**GitLab Work Breakdown Structure: (see the **[**wiki page for user stories**](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/user-stories#word-breakdown-structure)**)**
+**GitLab Work Breakdown Structure: (see the **[**wiki page for user stories**](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/user-stories#work-breakdown-structure)**)**
 
 - _Main Initiatives:_
 
