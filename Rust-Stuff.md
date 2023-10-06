@@ -1,11 +1,13 @@
 ## Getting Started
 
-* [A much briefer version of the Rust book](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
-* \[A description of implementing a web server using the standard library's networking tools\](https://doc.rust-lang.org/book/ch20-01-single-threaded.html)
+_Resources:_
+
+* [A Brief Version of the Rust book](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
+* [Building a Web Server Using Networking Tools in Rust's Standard Library](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
 
 ---
 
-## Use [rust-analyzer](https://rust-analyzer.github.io/)
+## Use VsCode's [Rust-Analyzer](https://rust-analyzer.github.io/) Extension
 
 * Rust analyzer has been ported to other code editors as well, not just VS code.
 * It is an AMAZING VS code extension. Some of the best language support I've ever seen in VS code tbh.
