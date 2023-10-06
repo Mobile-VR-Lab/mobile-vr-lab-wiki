@@ -9,5 +9,6 @@
     * Reduced latency
     * Offers transport-layer transmission control
     * Well-maintained by Google
+
 * **SCTP**
   * runs on top of L3 IP
