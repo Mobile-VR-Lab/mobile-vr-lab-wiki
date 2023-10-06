@@ -1,4 +1,4 @@
-# Getting Started
+## Getting Started
 
 * [A much briefer version of the Rust book](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
 * \[A description of implementing a web server using the standard library's networking tools\](https://doc.rust-lang.org/book/ch20-01-single-threaded.html)
