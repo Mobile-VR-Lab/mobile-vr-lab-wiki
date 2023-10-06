@@ -22,27 +22,10 @@ _Resources:_
 
 ## Libraries to Consider Using
 
-* [fast and concurrent hash map](https://crates.io/crates/dashmap "fast and concurrent hash map
-  
-  (https://crates.io/crates/dashmap)")
-* [static variables with runtime initialization](https://crates.io/crates/lazy_static "static variables with runtime initialization
-  
-  (https://crates.io/crates/lazy_static)")
-* [zmq](https://crates.io/crates/zmq "zmq
-  
-  (https://crates.io/crates/zmq)")
-* [serialization and deserialization of data types (serde for short)](https://crates.io/crates/serde "serialization and deserialization of data types (serde for short)
-  
-  (https://crates.io/crates/serde)")
-* [serde JSON extension](https://crates.io/crates/serde_json "serde JSON extension
-  
-  (https://crates.io/crates/serde_json)")
-* [serde XML extension](https://crates.io/crates/serde_xml "serde XML extension
-  
-  (https://crates.io/crates/serde_xml)")
-* [serde MessagePack extension for server-headset interaction](https://lib.rs/crates/rmp-serde "serde MessagePack extension for server-headset interaction
-  
-  (https://lib.rs/crates/rmp-serde)")
-* [tiny_http](https://docs.rs/tiny_http/latest/tiny_http/ "tiny_http
-  
-  (https://docs.rs/tiny_http/latest/tiny_http/)")
+* [fast and concurrent hash map](https://crates.io/crates/dashmap)
+* [static variables with runtime initialization](https://crates.io/crates/lazy_static)
+* [serialization and deserialization of data types (serde for short)](https://crates.io/crates/serde)
+* [serde JSON extension](https://crates.io/crates/serde_json)
+* [serde XML extension](https://crates.io/crates/serde_xml)
+* [serde MessagePack extension for server-headset interaction](https://lib.rs/crates/rmp-serde)
+* [tiny_http](https://docs.rs/tiny_http/latest/tiny_http/)
