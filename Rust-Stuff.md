@@ -1,9 +1,8 @@
 ## Getting Started
 
-_Resources:_
-
-* [A Brief Version of the Rust book](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
-* [Building a Web Server Using Networking Tools in Rust's Standard Library](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
+* Resources:
+  * [A Brief Version of the Rust book](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
+  * [Building a Web Server Using Networking Tools in Rust's Standard Library](https://stevedonovan.github.io/rust-gentle-intro/1-basics.html)
 
 ---
 
