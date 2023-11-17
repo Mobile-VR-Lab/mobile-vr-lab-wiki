@@ -6,4 +6,4 @@
 
 [Network Protocol Candidates](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Network-Protocol-Candidates)
 
-[Unity Info](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Unity Info)
+[Unity Info](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Unity-Info)
