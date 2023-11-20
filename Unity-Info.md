@@ -120,3 +120,61 @@ Once you have imported the Meta XR Simulator, you must activate it. On the menu 
 
 Then, you can run your Unity application by clicking the Play button. The Debug Window of Meta XR Simulator will open. You can drag the panels to arrange them for your convenience.
 ![sim](uploads/44ff277f4c04e54151ee13193cb3be0d/sim.png)
+
+Get Started with Hands Setup
+
+Note
+The recommended way to integrate hand tracking for Unity developers is to use the Interaction SDK, which provides standardized interactions and gestures. Building custom interactions without the SDK can be a significant challenge and makes it difficult to get approved in the store.
+
+Apps render hands in the same manner as any other input device. Start by setting up the camera, select hands as the input device, and add hands prefab to render hands in the default form. The following sections describe basic setup:
+
+Set Up Camera
+Create a new scene or open an existing one from your project.
+On the Project tab, search for OVRCameraRig, and then drag it in the scene. Skip this step if OVRCameraRig already exists in the scene.
+On the Hierarchy tab, select OVRCameraRig to open the Inspector tab.
+On the Inspector tab, go to OVR Manager > Tracking, and then in the Tracking Origin Type list, select Floor Level.
+Select Hands as Input
+On the Hierarchy tab, select OVRCameraRig to open the Inspector tab. Skip this step if you are continuing from the Set Up Camera section mentioned above.
+On the Inspector tab, go to OVR Manager > Quest Features, and then in the Hand Tracking Support list, select Controllers and Hands. Select Hands Only option to use hands as the input modality without any controllers.
+
+When you select controllers and hands or hands only option, Meta Quest automatically adds<uses-permission android:name="com.oculus.permission.HAND_TRACKING" /> and <uses-feature android:name="oculus.software.handtracking" android:required="false" /> elements in the AndroidManifest.xml file. When the app supports controllers and hands, android:required is set to false, which means that the app prefers to use hands if present, but the app continues to function with controllers in the absence of hands. When the app supports hands only, android:required is set to true. Oculus adds both of these tags automatically and there is no manual update required in the Android Manifest file.
+
+In the Hand Tracking Version list, leave selection as Default to use the latest version of hand tracking (Hands 1.0 is now deprecated. Selecting 1.0 or 2.0 will force your app to Hands 2.0, potentially preventing automatic upgrades to future major version releases)
+Add Hand Prefab
+On the Hierarchy tab, expand OVRCameraRig > TrackingSpace to add hand prefabs under the left and right hand anchors.
+On the Project tab, search for *OVRHandPrefab, and then drag it under each hand anchor on the **Hierarchy tab.
+On the Hierarchy tab, under RightHandAnchor, select OVRHandPrefab, and then on the Inspector tab, under OVR Hand, OVR Skeleton, and OVR Mesh, change the hand type to right hand. There’s no action needed for the left-hand prefab as the hand type is set to the left hand automatically.
+On the Hierarchy tab, select both the OVR Hand prefabs, and then on the Inspector tab, make sure OVR Skeleton, OVR Mesh, and OVR Mesh Renderer checkboxes are selected to render hands in the app.
+At this point, the app is able to render hands as an input device. To test hands, put on the headset, go to Settings > Device > Hands & Controllers, and turn on Hand Tracking. Leave the Auto Switch Between Hands And Controllers selected to let you use hands when you put controllers down. From Unity, build and run the app in the headset. After the app launches in the headset, put the controllers down, bring forward your hands that act as input devices in the app.
+
+Update Root Pose and Root Scale
+To generate and render the animated 3D model of hands, OVR Mesh Renderer combines data returned by OVR Skeleton and OVR Mesh. OVR Skeleton returns bind pose, bone hierarchy, and capsule collider data. OVR Mesh loads a specified 3D asset from the Oculus runtime and exposes it as a Unity Engine mesh. We have preconfigured the recommended settings and have explained them in detail.
+
+On the Hierarchy tab, expand OVRCameraRig > TrackingSpace, and then under LeftHandAnchor and RightHandAnchor, select both the OVRHandPrefab prefabs.
+When the OVRHandPrefab is parented to the left- and right-hand anchors under OVRCameraRig, leave the Update Root Pose checkbox unchecked so that the hand anchors can correctly position the hands in the tracking space. If it is placed independently of OVRCameraRig, select the checkbox to ensure that not only the fingers and bones, but the actual root of the hand is correctly updated.
+To get an estimation of the user’s hand size via uniform scale against the reference hand model, make sure the Update Root Scale checkbox is selected. By default, the reference hand model is scaled to 100% (1.0). By enabling scaling, the hand model size is scaled either up or down based on the user’s actual hand size. The hand scale may change at any time, and we recommend that you should scale the hand for rendering and interaction at runtime. If you prefer to use the default reference hand size, clear the selection from the checkbox.
+Add Physics Capsules
+The physics capsules represent the volume of the bones in the hand that is used to trigger interactions with physical objects and generate collision events with other rigid bodies in the physics system.
+
+On the Hierarchy tab, expand OVRCameraRig > TrackingSpace, and then select the OVR Hand prefab that you want to use for physics interaction.
+On the Inspector tab, under OVR Skeleton, select the Enable Physics Capsules checkbox.
+Repeat steps 1 and 2 for the other hand prefab.
+Customize Display
+Default hand models are skinned. A skinned mesh renderer surfaces properties that define how the model is rendered in the scene. Make sure the Skinned Mesh Renderer checkbox is selected. There are three broad categories that you can define to customize the hand model:
+
+Materials define how hands appear in the app. Depending on the shader, configure the material that suits your content. For example, select either metallic or specular workflow, set the rendering mode, define the base color, or adjust the smoothness. For more information about materials, go to Creating and Using Materials guide in the Unity documentation.
+Lighting specifies if and how the mesh renderer will cast and receive shadows.
+Probes contains properties that set how the renderer receives light from the Light Probe system.
+To define the skinned mesh renderer properties, do the following:
+
+On the Hierarchy tab, expand OVRCameraRig > TrackingSpace, and then select the OVR Hand prefab from any one hand anchor.
+On the Inspector tab, do the following:
+Make sure the Skinned Mesh Renderer checkbox is selected.
+Under Materials, enter the number of materials you want to use, and drag the material in the list of materials. By default, the size is set to one and the first element is always Element 0.
+Under Lighting, in the Cast Shadows list, select how the renderer should cast shadows when a suitable light shines on it, and then select the Receive Shadows checkbox to let the mesh display any shadows that are cast upon it.
+Under Probes, in the Light Probes list, select how the renderer should use interpolated Light Probes. By default, the renderer uses one interpolated light probe.
+Repeat steps 1 and 2 for the other OVR Hand prefab.
+To use a customized mesh, map your custom skeleton that is driven by our skeleton. For more information on sample usage, refer to the HandTest_Custom scene, which uses the OVRCustomHandPrefab_L and OVRCustomHandPrefab_R prefabs, as well as the OVRCustomSkeleton.cs script.
+
+To enable wireframe skeleton rendering that renders bones with wireframe lines and assists with visual debugging, select the OVR Skeleton Renderer checkbox.
+
