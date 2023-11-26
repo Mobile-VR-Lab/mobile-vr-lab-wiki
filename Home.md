@@ -8,6 +8,10 @@ Instructor Links:
 
 - [Lectures](https://docs.google.com/spreadsheets/d/17QhYD7owmnFV37wXXCzubeYC1i4VtrNEuNqlL1iEL5g/edit#gid=861559772)
 
+Content Creator Resources:
+
+- [Script XML File Documentation](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Script-XML-File-Documentation)
+
 Figma:
 
 * [App UX/UI](https://www.figma.com/proto/IBMzCBj21FK8BucwK9fvTG/Mobile-App?type=design&node-id=64-335&t=mj7bELGn95XP6vU0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=64%3A335)
