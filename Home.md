@@ -18,11 +18,12 @@ Figma:
 
 Live Docs:
 
-- [Design Docs](https://docs.google.com/document/d/1rlEf9YLJFJ8p1VHkpaNRBwVy1ki6spU3J3VajOw8ndQ/edit)
+- [Design Diagrams](https://docs.google.com/document/d/1rlEf9YLJFJ8p1VHkpaNRBwVy1ki6spU3J3VajOw8ndQ/edit)
 - [Meeting Minutes](https://docs.google.com/document/d/1cz0_cBLpXgDCDwTyGf_t4798rfZMIIOMGeRH0HH_DkE/edit)
 - [Charter](https://docs.google.com/document/d/1AzrEQQna0sqeH6jmq9XWACUrQPHNJFHjwyGRSKqrE0M/edit#heading=h.c5rpsdy8g2ak)
 - [User Stories](https://docs.google.com/document/d/14HdqApa8lbh3IsBc_AyPRG9tptEWp7aRVvDml7Rivys/edit)
 - [Release Planning](https://docs.google.com/document/d/1BuxlUJMqYur5WtViY73UXNJlz_DASU9bqrzAG7R0oU4/edit)
+- [Tech Doc (Draft 0)](https://docs.google.com/document/d/1nqQB0p0pV0Qlu6kxVfruN7TWUGNuVzj5AvTm22APRhQ/edit)
 
 ---
 
