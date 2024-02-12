@@ -8,6 +8,9 @@ Instructor Links:
 
 - [Lectures](https://docs.google.com/spreadsheets/d/17QhYD7owmnFV37wXXCzubeYC1i4VtrNEuNqlL1iEL5g/edit#gid=861559772)
 
+Developer Resources:
+- [Developer Onboarding](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Developer-Onboarding)
+
 Content Creator Resources:
 
 - [Script XML File Documentation](https://gitlab.cs.unh.edu/groups/mobile-vr-lab/-/wikis/Script-XML-File-Documentation)
