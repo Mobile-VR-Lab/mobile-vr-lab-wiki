@@ -42,8 +42,8 @@ TODO
 
 1. Download [Unity Editor](https://unity.com/unity-hub) (2022 or later) 
   
-2. Download your C# IDE of choice 
- - We recommend [Rider](https://www.jetbrains.com/rider/download)  
+2. Download your C# IDE of choice  
+   - We recommend [Rider](https://www.jetbrains.com/rider/download)  
   
 3. Create a [GitHub](https://github.com/) account, if needed.
    
@@ -53,9 +53,9 @@ git clone https://github.com/cjanosdev/Mobile-VR-Lab.git
 ```
   
 5. Open the project in Unity.
- - Click on 'Add project from disk', and navigate to the cloned project directory.
- - Install dependencies.
-   - When you open the project, Unity should automatically download any needed packed specified in the `packages/manifest.json` file.
+   - Click on 'Add project from disk', and navigate to the cloned project directory.
+   - Install dependencies.
+     - When you open the project, Unity should automatically download any needed packed specified in the `packages/manifest.json` file.
 
 ### Project Structure
 
