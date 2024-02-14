@@ -59,10 +59,9 @@ TODO
 ### Project Structure
 
 - **Assets:** This directory contains all of the scripts, materials, models, scenes, and other third-party assets like Oculus VR support and TextMesh Pro. 
-  - **Scenes:** Located within the Assets directory, this folder holds the Unity scene files which specify unique environments within the project. They contain things like objects, models, lighting, cameras, and other UI elements. 
+  - **Scenes:** Located within the Assets directory, this folder holds the Unity scene files which contain things like objects, models, lighting, cameras, and other UI elements. 
   - **Scripts:** Also within the Assets directory, this contains the C# scripts that control the project's behavior.
     
-- **Packages**: This contains project dependencies managed by Unity's Package Manager. The manifest.json file within this directory lists all the package dependencies for your project.
+- **Packages**: This contains project dependencies managed by Unity's Package Manager. The manifest.json file within this directory lists all the package dependencies for the project.
    
-- **ProjectSettings:** This directory stores configuration settings for your Unity project, ensuring consistency across environments and among team members.
-
+- **ProjectSettings:** This directory stores configuration settings for the Unity project.
