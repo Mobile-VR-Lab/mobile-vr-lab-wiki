@@ -30,9 +30,63 @@ The test server lives under the subfolder `test_server` on the android app repos
 
 ---
 
-# Server App Setup
+# Server App
 
-TODO
+## What should you know?
+
+It is recommended that you have taken CS 761 (Programming Language Concepts & Features) before working on this segment of the project. CS 735, CS 712, and CS 720 are also good to have taken. If you have experience writing async code in JavaScript, that will also be helpful. Rust, in many ways, is quite similar to Scala, but with more C-like syntax. The server makes use of functional programming features, pattern matching, and some other [advanced type features](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html).
+
+Confused by the language? Take a look at the [Rust Handbook](https://doc.rust-lang.org/book/).
+
+## First-time Setup
+
+The following steps should get you a working development environment quickly.
+
+1. Clone the server repository
+   - Run `git clone git@gitlab.cs.unh.edu:mobile-vr-lab/vr-lab-server.git vr-lab-server`
+2. Install tools needed for the development environment
+   - [Visual Studio Code](https://code.visualstudio.com/)
+      - If you are using a Linux distribution, install VS code through your package manager.
+   - An OCI-compliant container runtime of your choice (Docker, Podman, etc...)
+3. Set up your development environment
+   - Open the Git repository folder in VS code.
+   - Use the Dockerfile in the repository to set up a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers).
+   - The dev container will set up Rust and required system libraries for you.
+   - If you would rather not use a dev container, then you will need to install Rust.
+      - Install [rustup](https://rustup.rs/)
+      - Run `rustup install stable` to install the current stable Rust toolchain on your system.
+4. Install VS code plugins
+   - Make sure your VS code window is running inside your development container or desired development environment.
+   - Install the [rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+5. Run `RUST_LOG=debug cargo run` in the terminal. It should build and run successfully if your environment is set up properly.
+
+### Remarks
+
+VS Code is recommended, but not required. You may also use the JetBrains IDE for Rust, [Rust Rover](https://www.jetbrains.com/rust/). This was not used in the development of this project, but if you prefer JetBrains IDEs, then give it a try and add to this documentation.
+
+## The Test Client
+
+The server has a dummy test client for local development purposes.
+It is located in the `test_client` directory inside the repository.
+
+As you add new features, you may need to send different dummy responses based on the message coming in.
+There is a `match` statement in the sender thread which you will need to modify in order to do this.
+Aside from that, it should just work. Note that it always connects to `127.0.0.1:15300`.
+
+## Notes
+
+When developing, make sure you always run this in the terminal:
+
+```
+export RUST_LOG=debug
+export RUST_BACKTRACE=1
+```
+
+This tells the logging framework (env_logger) to print all log messages, and the Rust default panic handler to print the stack trace for you in the case of an unwind. Note that the stack traces are very convoluted because we make use of the [tokio asynchronous runtime](https://tokio.rs/) in this project.
+
+## Beware
+
+Make sure you are not mixing OS sync types (from `std::sync`) and the async-aware sync types (from `tokio::sync`). Doing so will definitely introduce very hard to debug deadlocking bugs. If you pull in new libraries, you also must make sure that these are not using any locks (like `std::sync::Mutex`) from the standard library.
 
 ---
 
