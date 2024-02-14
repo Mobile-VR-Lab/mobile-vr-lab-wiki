@@ -36,27 +36,33 @@ TODO
 
 ---
 
-# Unity App Setup
+# Unity Setup
 
 ### Getting Started
 
-1. Download [Unity Editor](https://unity.com/unity-hub) (2022 or later) 
+1. **Download [Unity Editor](https://unity.com/unity-hub)** (2022 or later) 
   
-2. Download your C# IDE of choice  
+2. **Download your C# IDE of choice**
    - We recommend [Rider](https://www.jetbrains.com/rider/download)  
   
-3. Create a [GitHub](https://github.com/) account, if needed.
+3. **Create a [GitHub](https://github.com/) account, if needed.**
    
-4. Clone the repository: 
-```shell
-git clone https://github.com/cjanosdev/Mobile-VR-Lab.git
-```
+4. **Clone the repository**:
+   - <pre><code>git clone https://github.com/cjanosdev/Mobile-VR-Lab.git</code></pre>
   
-5. Open the project in Unity.
+5. **Open the project in Unity**
    - Click on 'Add project from disk', and navigate to the cloned project directory.
    - Install dependencies.
      - When you open the project, Unity should automatically download any needed packed specified in the `packages/manifest.json` file.
+  
 
 ### Project Structure
 
-- 
+- **Assets:** This directory contains all of the scripts, materials, models, scenes, and other third-party assets like Oculus VR support and TextMesh Pro. 
+  - **Scenes:** Located within the Assets directory, this folder holds the Unity scene files which specify unique environments within the project. They contain things like objects, models, lighting, cameras, and other UI elements. 
+  - **Scripts:** Also within the Assets directory, this contains the C# scripts that control the project's behavior.
+    
+- **Packages**: This contains project dependencies managed by Unity's Package Manager. The manifest.json file within this directory lists all the package dependencies for your project.
+   
+- **ProjectSettings:** This directory stores configuration settings for your Unity project, ensuring consistency across environments and among team members.
+
